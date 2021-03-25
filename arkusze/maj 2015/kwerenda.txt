@@ -1,0 +1,2 @@
+SELECT  TOP 1 Wyscigi.Rok,  Wyscigi.GrandPrix, Wyniki.punkty
+FROM Wyscigi INNER JOIN (Kierowcy INNER JOIN Wyniki ON Kierowcy.Id_kierowcy = Wyniki.Id_kierowcy) ON Wyscigi.Id_wyscigu = Wyniki.Id_wyscigu WHERE Kierowcy.Nazwisko="Kubica" ORDER BY Wyniki.punkty DESC;
